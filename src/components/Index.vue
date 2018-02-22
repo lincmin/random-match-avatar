@@ -70,6 +70,46 @@ export default {
         {
           name: '9',
           img: require('../assets/avatars/9.jpg')
+        },
+        {
+          name: '10',
+          img: require('../assets/avatars/10.jpg')
+        },
+        {
+          name: '11',
+          img: require('../assets/avatars/11.jpg')
+        },
+        {
+          name: '12',
+          img: require('../assets/avatars/12.jpg')
+        },
+        {
+          name: '13',
+          img: require('../assets/avatars/13.jpg')
+        },
+        {
+          name: '14',
+          img: require('../assets/avatars/14.jpg')
+        },
+        {
+          name: '15',
+          img: require('../assets/avatars/15.jpg')
+        },
+        {
+          name: '16',
+          img: require('../assets/avatars/16.jpg')
+        },
+        {
+          name: '17',
+          img: require('../assets/avatars/17.jpg')
+        },
+        {
+          name: '18',
+          img: require('../assets/avatars/18.jpg')
+        },
+        {
+          name: '19',
+          img: require('../assets/avatars/19.jpg')
         }
       ]
     }
@@ -111,8 +151,9 @@ export default {
   height: 100%;
 }
 .box {
-  width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 .person {
   position: relative;
@@ -125,7 +166,6 @@ export default {
 }
 .person:nth-child(odd) {
   float: left;
-  width: 50%;
 }
 .person:nth-child(odd) .line:after {
   content: "";
@@ -133,12 +173,11 @@ export default {
   top: 50%;
   right: 0;
   background: #5dc596;
-  width: 25%;
+  width: 20%;
   height: 2px;
 }
 .person:nth-child(even) {
   float: right;
-  width: 50%;
 }
 .person:nth-child(even) .line:after {
   content: "";
@@ -146,17 +185,21 @@ export default {
   top: 50%;
   left: 0;
   background: #5dc596;
-  width: 25%;
+  width: 20%;
   height: 2px;
 }
 .person .line > img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 .loadWrap {
   width:100%;
   height:100%;
   position: absolute;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
   display: flex;
   justify-content: center;
   align-items: center;
