@@ -2,6 +2,11 @@
 
 > a vuejs project is used for random matching avatars
 
+## screenshot
+
+![screenshots](https://github.com/lincmin/random-match-avatar
+/raw/master/screenshots/random.gif)
+
 ## Build Setup
 
 ``` bash
