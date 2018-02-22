@@ -4,8 +4,7 @@
 
 ## screenshot
 
-![screenshots](https://github.com/lincmin/random-match-avatar
-/raw/master/screenshots/random.gif)
+![screenshots](https://github.com/lincmin/random-match-avatar/raw/master/screenshots/random.gif)
 
 ## Build Setup
 
