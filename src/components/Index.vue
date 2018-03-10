@@ -1,18 +1,28 @@
 <template>
   <div class="container">
     <div class="center">
-      <toggle-button :value="false" :color="color" :labels="{checked: '开始', unchecked: '暂停'}" :width="60" @change="toggle"/>
+      <toggle-button :value="false"
+                     :color="color"
+                     :labels="{checked: '开始', unchecked: '暂停'}"
+                     :width="70"
+                     :height="30"
+                     @change="toggle" />
     </div>
     <div class="box">
-      <div class="person" v-for="member in members" :key="member.name">
+      <div class="person"
+           v-for="member in members"
+           :key="member.name">
         <div class="line">
-          <img :src="member.img" alt="">
+          <img :src="member.img"
+               alt="">
           <span class="name">{{member.name}}</span>
         </div>
       </div>
     </div>
     <span class="loadWrap">
-    <ring-loader :loading="loading" :color="color" :size="size"></ring-loader>
+      <ring-loader :loading="loading"
+                   :color="color"
+                   :size="size"></ring-loader>
     </span>
   </div>
 </template>
@@ -151,7 +161,7 @@ export default {
   height: 100%;
 }
 .box {
-  margin: 0 auto;
+  margin: 0 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -168,7 +178,7 @@ export default {
   float: left;
 }
 .person:nth-child(odd) .line:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   right: 0;
@@ -180,7 +190,7 @@ export default {
   float: right;
 }
 .person:nth-child(even) .line:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 0;
@@ -192,14 +202,17 @@ export default {
   width: 150px;
   height: 150px;
 }
+.name {
+  color: #5dc596;
+}
 .loadWrap {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
-  bottom:0;
-  left:0;
-  right:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
